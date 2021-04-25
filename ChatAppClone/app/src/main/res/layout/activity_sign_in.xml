@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sss111"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/sa1"
+       android:text="ChatApp"
+        android:textSize="41dp"
+        android:textColor="@color/tomato"
+        android:textStyle="italic">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/Emai_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email..."
+
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/Pass_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_below="@+id/Emai_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textPassword"
+        android:hint="PassWord..."
+        >
+    </EditText>
+    <Button
+        android:id="@+id/Sigin_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pass_logo"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:text="Login"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        >
+    </Button>
+    <Button
+        android:id="@+id/Create_Account_link"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="17dp"
+        android:text="Need New Account? Sign Up"
+        android:textAllCaps="false"
+        android:layout_below="@+id/quen"
+        android:background="@color/colorviolet"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/quen"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/Sigin_link"
+        android:layout_marginLeft="20dp"
+        android:background="@color/colorviolet"
+        android:text="You Forgot Your Password"
+        android:textAllCaps="false"
+>
+
+    </Button>
+
+</RelativeLayout>

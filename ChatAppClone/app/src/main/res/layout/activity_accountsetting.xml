@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AccountsettingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout_proile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/save_profile_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                   android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Done"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:src="@drawable/save_edited_info">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture_edit"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/app_bar_layout_proile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile1"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/change_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picture_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="Change Image"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/full_name_profile_frag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/change_image_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColorHint="@color/colorlavenderblush"
+
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/User_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/full_name_profile_frag"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:hint="User_Name"
+        android:inputType="text"
+        android:textColorHint="@color/colorlavenderblush"
+
+
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/User_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:hint="Bio"
+        android:inputType="text"
+        android:textColorHint="@color/colorlavenderblush">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/logout_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_black_background"
+        android:text="LogOut"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/tomato"
+        android:textSize="16dp">
+
+    </Button>
+
+</RelativeLayout>

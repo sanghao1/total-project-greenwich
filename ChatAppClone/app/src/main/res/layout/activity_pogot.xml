@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/sss111"
+    android:layout_height="match_parent"
+    tools:context=".pogotActivity">
+
+
+    <EditText
+        android:id="@+id/Pass_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:inputType="textEmailAddress"
+        android:hint="E-Mail"
+        >
+    </EditText>
+    <Button
+        android:id="@+id/pogot_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pass_logo"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:text="Reset Password"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        >
+    </Button>
+
+</RelativeLayout>

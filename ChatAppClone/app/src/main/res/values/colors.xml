@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="colorlavenderblush">#ffb6c1</color>
+    <color name="colorPrimary">#5c32c7</color>
+    <color name="colorPrimaryDark">#5c32c7</color>
+    <color name="colorAccent">#ff68a5</color>
+    <color name="colorBlack">#c2bdbf</color>
+    <color name="colorpapayawhip">#ffefd5</color>
+    <color name="colorplum">#dda0dd</color>
+    <color name="colorviolet">#ee82ee</color>
+    <color name="tomato">#ff6347</color>
+    <color name="colorPrimary1">#c2bdbf</color>
+</resources>
